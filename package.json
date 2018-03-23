@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jsoneditor": "^5.14.1"
+    "jsoneditor": "^5.14.1",
+    "redux": "^3.7.2"
   }
 }
