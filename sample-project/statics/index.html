@@ -8,8 +8,28 @@
     <title>Sample Redux App</title>
 </head>
 <body>
+    <div id="jsoneditor" style="width: 400px; height: 400px;"></div>
 
     <link href="./../../node_modules/jsoneditor/dist/jsoneditor.min.css" rel="stylesheet" type="text/css">
     <script src="./../../node_modules/jsoneditor/dist/jsoneditor.min.js"></script>
+    <script>
+      var container = document.getElementById("jsoneditor");
+      var options = {
+        mode: 'view',
+        sortObjectKeys: true,
+        modes: ['view', 'form', 'code', 'text'],
+        name: 'store',
+      };
+      var editor = new JSONEditor(container, options);
+      var json = {
+        "Array": [1, 2, 3],
+        "Boolean": true,
+        "Null": null,
+        "Number": 123,
+        "Object": {"a": "b", "c": "d"},
+        "String": "Hello World"
+      };
+      editor.set(json);
+    </script>
 </body>
 </html>
