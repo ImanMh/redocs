@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "jsdoc": "jsdoc",
+    "makeDocs": "jsdoc -t jsdoc-template -d console.json ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "jsdoc": "^3.5.5",
     "jsoneditor": "^5.14.1",
     "redux": "^3.7.2"
   }
