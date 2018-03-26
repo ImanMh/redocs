@@ -1,5 +1,5 @@
 {
-  "name": "test-es6-yo-generator",
+  "name": "redocs",
   "version": "0.0.1",
   "description": "Redux Document Tool",
   "main": "dist/test-es6-yo-generator.js",
